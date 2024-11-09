@@ -1,12 +1,11 @@
-a = int(input())
-b = int(input())
-sum = 1
-for i in range(1,a+1):
-    for j in range(1,b+1):
-        if i==1 or i==a or j==1 or j==b:
-            print(sum,end=" ")
-            
+m = int(input())
+n = int(input())
+prod = m*n 
+for i in range(1,m+1):
+    for j in range(1,n+1):
+        if i==1 or i==m or j==1 or j==n:
+            print(prod,end=" ")
         else:
-            print(" ",end=" ")
-        sum += 1
+            print("  ",end="")
+        prod -= 1
     print()
